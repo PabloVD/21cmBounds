@@ -6,9 +6,9 @@ Python script for plotting the current upper limits on the power spectrum of the
 
 ## Observational bounds
 
-The upper limits considered are stored in the "data" folder. The data files present at least two columns, corresponding to the redshifts z and the power spectrum in units of (mK)^2. If the bound is on a extended range of redshifts, there are two additional columns, with the minimum and maximum redshifts, and thus the first column refers to the mean redshift.
+The upper limits considered are stored in the `data` folder. The data files present at least two columns, corresponding to the redshifts z and the power spectrum in units of (mK)^2. If the bound is on a extended range of redshifts, there are two additional columns, with the minimum and maximum redshifts, and thus the first column refers to the mean redshift.
 
-The file list_data.txt includes the bounds to be considered, indicating the name of the data file in the "data" folder, a label with the name of the experiment and the reference of the upper limit, the color and the marker type.
+The file `list_data.txt` includes the bounds to be considered, indicating the name of the data file in the `data` folder, a label with the name of the experiment and the reference of the upper limit, the color and the marker type.
 
 The experiments, bounds and scales k considered are the following:
 
