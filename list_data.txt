@@ -1,0 +1,16 @@
+#
+# Name file	Label experiment and reference	Color		Marker
+#
+GMRT_2013;	GMRT, Paciga et al. 2013;	red;		d;
+GMRT_2020;	GMRT, Pal et al. 2020;		green;		d;
+MWA_2014;	MWA Dillon et al. 2014;		purple;		h;
+MWA_2015;	MWA Dillon et al. 2015;		grey;		h;
+MWA_2016_1;	MWA, Beardsley et al. 2016;	orange;		h;
+MWA_2016_2;	MWA, Ewall-Wice et al. 2016;	brown;		h;
+MWA_2019;	MWA, Barry et al. 2019;		blue;		h;
+LOFAR_2017;	LOFAR, Patil et al. 2017;	k;		$\clubsuit$;
+LOFAR_2018;	LOFAR Gehlot et al. 2018;	magenta;	$\clubsuit$;
+OVRO-LWA_2019;	OVRO-LWA, Eastwood et al. 2019;	cyan;		$\spadesuit$;
+OVRO-LWA_2021;	OVRO-LWA Garsden et al. 2021;	pink;		$\spadesuit$;
+PAPER_2019;	PAPER, Kolopanis et al. 2019;	springgreen;	$\heartsuit$;
+AARTFAAC_2020;	AARTFAAC, Gehlot et al. 2020;	olive;		$\bigstar$;
