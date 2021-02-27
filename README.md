@@ -2,7 +2,7 @@
 
 Python script for plotting the current upper limits on the power spectrum of the cosmological 21 cm line.
 
-![](plot_21ps_constraints.pdf)
+![](plot_21ps_constraints.png)
 
 ## Observational bounds
 
