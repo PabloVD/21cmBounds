@@ -14,7 +14,7 @@ NOTE:  We encourage the user to perform their own convergance tests if modifying
 
 /*
   The normalization of the soft-band X-ray luminosity per unit star formation, L_X, computed over the band E0 – 2 keV, i.e. NU_X_THRESH - NU_X_BAND_MAX.
-  When making a mock 21-cm observations, we assume the X-ray binary composite SED of Fragos et al. (2013),  with the ISM attenuation from Das et al. (2017), 
+  When making a mock 21-cm observations, we assume the X-ray binary composite SED of Fragos et al. (2013),  with the ISM attenuation from Das et al. (2017),
   resulting in a fiducial value of L_{X <2 keV}/SFR = 10^{40.5}erg s^{-1} Msun^{-1} yr.
   Here, L_X = 40.5 means log10(L_X) = 40.5
   NOTE: Smallest frequency X-ray photon contributing to IGM heating and ionization
@@ -48,7 +48,7 @@ Filter choice used for smoothing the linear density field to obtain the collapse
   Maximum redshift used in the Tk and x_e evolution equations.
   Temperature and x_e are assumed to be homogenous at higher redshifts.
 */
-#define Z_HEAT_MAX (float) (30)
+#define Z_HEAT_MAX (float) (35)
 
 /*
   Maximum radius of influence for computing Xray and Lya pumping in cMpc. This

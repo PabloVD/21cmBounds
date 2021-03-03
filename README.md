@@ -1,6 +1,7 @@
 # 21cmBounds
 
 Python script for plotting the current upper limits on the power spectrum of the cosmological 21 cm line.
+Roughly inspired in [arXiv:1907.08211](https://arxiv.org/abs/1907.08211).
 
 ![](plot_21ps_constraints.png)
 
@@ -10,7 +11,7 @@ The upper limits considered are stored in the `data` folder. The data files pres
 
 The file `list_data.txt` includes the bounds to be considered, indicating the name of the data file in the `data` folder, a label with the name of the experiment and the reference of the upper limit, the color and the marker type.
 
-The considered experiments, bounds and scales k at which the upper limits correspond are the following:
+Scales for most of the upper limits plotted lie within k ~ 0.1 and 0.3 h/Mpc, with few exceptions. The considered experiments, bounds and scales k at which the upper limits correspond are the following:
 
 | File | Reference | arXiv | k [h/Mpc] | Notes |
 |---|---|---|---|---|
@@ -27,6 +28,7 @@ The considered experiments, bounds and scales k at which the upper limits corres
 |OVRO-LWA_2021 | Garsden et al. 2021 | 2102.09596 | 0.3 | Redshifts between z=25−31 |
 |PAPER_2019 | Kolopanis et al. 2019 | 1909.02085 | ~ 0.3 | - |
 |AARTFAAC_2020 | Gehlot et al. 2020 | 2010.02269 | 0.144 |  Redshifts between z=17.9, 18.6, average of two bins (see reference) |
+
 
 
 ## Fiducial model

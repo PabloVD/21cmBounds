@@ -7,11 +7,14 @@ import glob, os
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d
+from matplotlib.ticker import AutoMinorLocator, MultipleLocator, LogLocator, NullFormatter
 
 # Reduced Hubble rate (for units)
 hlittle = 0.7
 # Modeling error for sensitivity (see 1501.06576)
 moderror = 0.1
+# Fontsize for labels
+fontsiz = 15
 
 # Load the power spectrum from 21cmFAST, at a given scale k (indicated by the index kindex)
 def powerspectrum(path, kindex):
@@ -42,7 +45,7 @@ experiments = ["HERA", "SKA"]
 alpha_exp = [0.3, 0.7]
 
 
-fig, (axPs) = plt.subplots( figsize=(10,6) )
+fig, (ax) = plt.subplots( figsize=(10,6) )
 
 
 #--- FIDUCIAL MODEL ---#
@@ -84,11 +87,12 @@ for mturn in mturn_vals:
                 k, powk = powerspectrum(path, kindex)
                 #print(k)
 
-                axPs.plot(z, powk, linestyle="-", color="black", label="Fiducial model")
+                ax.plot(z, powk, linestyle="-", color="black", label="Fiducial model")
 
+                # Plot sensitivity regions
                 for j, exp in enumerate(experiments):
                     err = sensitivity(exp, moderror)
-                    axPs.fill_between(z, powk + err, powk - err, color="grey", alpha=alpha_exp[j], label=exp+" sensitivity")
+                    ax.fill_between(z, powk + err, powk - err, color="grey", alpha=alpha_exp[j], label=exp+" sensitivity")
 
 
 
@@ -113,20 +117,26 @@ markers = listdata[3]
 for i, data in enumerate(datanames):
 
     data = np.loadtxt("data/"+data+".txt", unpack=True)
-    axPs.scatter(data[0], data[1], marker=markers[i], color=colors[i], label=labels[i])
-    #axPs.arrow(data[0], data[1], 0., -data[1]/10., color=colors[i])
+    ax.scatter(data[0], data[1], marker=markers[i], color=colors[i], label=labels[i])
 
     # Plot bars for extended ranges of redsfhit
     if len(data)>2:
-        axPs.hlines(y=data[1], xmin=data[2], xmax=data[3], color=colors[i], zorder=1.e-1)
+        ax.hlines(y=data[1], xmin=data[2], xmax=data[3], color=colors[i], zorder=1.e-1)
 
 
-axPs.grid(True, linestyle=":", zorder=1.e-2)
-axPs.set_yscale("log")
-axPs.legend(bbox_to_anchor=(1.01, 0.9), borderaxespad=0., fontsize=10)
-axPs.set_xlim([6.,29.])
-axPs.set_ylabel(r"$\overline{\delta T_{\rm b}}^2 \Delta_{21}^2 \; [mK^2]$")
-axPs.set_xlabel(r"$z$")
+
+ax.set_yscale("log")
+ax.legend(bbox_to_anchor=(1.38, 0.9), borderaxespad=0., fontsize=10)
+ax.set_xlim([6.,32.])
+ax.set_ylabel(r"$\overline{\delta T_{\rm b}}^2 \Delta_{21}^2 \; [mK^2]$", fontsize=fontsiz)
+ax.set_xlabel(r"$z$", fontsize=fontsiz)
+
+ax.xaxis.set_major_locator(MultipleLocator(5))
+ax.yaxis.set_major_locator(LogLocator(base=10.0, numticks=15))
+ax.xaxis.set_minor_locator(AutoMinorLocator(5))
+ax.yaxis.set_minor_locator(LogLocator(base=10.0, numticks=30))
+ax.yaxis.set_minor_formatter(NullFormatter())
+ax.grid(True, linestyle=":", zorder=1.e-2, which='both')
 
 plt.savefig("plot_21ps_constraints.pdf", bbox_inches='tight')
 plt.show()
