@@ -1,5 +1,7 @@
 # 21cmBounds
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4579904.svg)](https://doi.org/10.5281/zenodo.4579904)
+
 Python script for plotting the current upper limits on the power spectrum of the cosmological 21 cm line.
 Roughly inspired in [arXiv:1907.08211](https://arxiv.org/abs/1907.08211).
 
@@ -41,7 +43,7 @@ Sensitivity for the HERA and SKA experiments is also shown, being computed for t
 
 ## Citation
 
-If you use the code, please link this repository.
+If you use the code, please link this repository and cite the DOI [10.5281/zenodo.4579904](https://doi.org/10.5281/zenodo.4579904).
 
 ## Contact
 
