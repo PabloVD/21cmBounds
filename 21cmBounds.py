@@ -126,7 +126,7 @@ for i, data in enumerate(datanames):
 
 
 ax.set_yscale("log")
-ax.legend(bbox_to_anchor=(1.38, 0.9), borderaxespad=0., fontsize=10)
+ax.legend(bbox_to_anchor=(1., 1.), loc="upper left", fontsize=10)
 ax.set_xlim([6.,32.])
 ax.set_ylabel(r"$\overline{\delta T_{\rm b}}^2 \Delta_{21}^2 \; [mK^2]$", fontsize=fontsiz)
 ax.set_xlabel(r"$z$", fontsize=fontsiz)

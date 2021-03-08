@@ -18,14 +18,17 @@ Scales for most of the upper limits plotted lie within k ~ 0.1 and 0.3 h/Mpc, wi
 | File | Reference | arXiv | k [h/Mpc] | Notes |
 |---|---|---|---|---|
 |GMRT_2013 | Paciga et al. 2013 | 1301.5906 | 0.5 | - |
-|GMRT_2020 | Pal et al. 2020 | 2012.04998 | 1.59 | Larger k available |
-|MWA_2014 | Dillon et al. 2014 | 1304.4229 | ~ 0.1 | Larger k available |
-|MWA_2015 | Dillon et al. 2015 | 1506.01026 | ~ 0.2 | Several k available |
+|GMRT_2020 | Pal et al. 2020 | 2012.04998 | 1.59 | Other k available |
+|MWA_2014 | Dillon et al. 2014 | 1304.4229 | ~ 0.1 | Other k available |
+|MWA_2015 | Dillon et al. 2015 | 1506.01026 | ~ 0.2 | Other k available |
 |MWA_2016_1 | Beardsley et al. 2016 | 1608.06281 | ~ 0.2 | Table 1, Polarization N-S (see reference) |
 |MWA_2016_2 | Ewall-Wice et al. 2016 | 1605.00016 | ~ 0.2 | Sec. 4.4 (see reference) |
-|MWA_2019 | Barry et al. 2019 | 1909.00561 | 0.2 | - |
+|MWA_2019_1 | Barry et al. 2019 | 1909.00561 | 0.2 | - |
+|MWA_2019_2 | Li et al. 2019 | 1911.10216 | ~ 0.2 | Table 2. Other k available |
+|MWA_2020 | Trott et al. 2019 | 2002.02575 | 0.142 | Table 4. Other k available |
 |LOFAR_2017 | Patil et al. 2017 | 1702.08679 | 0.128 | Table 3 (stronger limits at k = 0.053 h/Mpc) |
 |LOFAR_2018 | Gehlot et al. 2018 | 1809.06661 | 0.038 | Redshifts between z=19.8−25.2, 3C220 field (see reference) |
+|LOFAR_2020 | Mertens et al. 2020 | 2002.07196 | 0.100 | Table 4. Other k available |
 |OVRO-LWA_2019 | Eastwood et al. 2019 | 1906.08943 | ~ 0.1 | - |
 |OVRO-LWA_2021 | Garsden et al. 2021 | 2102.09596 | 0.3 | Redshifts between z=25−31 |
 |PAPER_2019 | Kolopanis et al. 2019 | 1909.02085 | ~ 0.3 | - |
